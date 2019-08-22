@@ -1,0 +1,152 @@
+﻿html,body{
+	width:100%;
+	height:100%
+}
+
+body{
+	/* font-family: 'Microsoft YaHei UI',arial,sans-serif;
+    font-size: 13px; */
+    background-image: url("../images/body.jpg");
+    background-size:100% 100%; 
+}
+
+#logo{
+    height: 5%;
+    width: 5%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-png {
+    height: 5%;
+    /*margin-top: auto;*/
+    /*margin-left: 50px;*/
+    /*margin-right: auto;*/
+}
+
+.right-png {
+    height: 5%;
+    /*margin-top: auto;*/
+    /*margin-left: auto;*/
+    /*margin-right: 50px;*/
+}
+
+#search-bar{
+    margin-top: 25px;
+    width: 600px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search-bar input {
+    width: 580px;
+    height: 25px;
+    padding: 9px 10px;
+	font-family: 'Microsoft YaHei UI',arial,sans-serif;
+    font-size: 15px;
+    color: #555;
+    border: none;
+    background: #fff;
+    overflow: hidden;
+    outline:none;
+    vertical-align: middle;
+    box-shadow: 1px 1px 3px rgb(160,160,160);
+	border-radius: 2px;
+}
+
+#search-bar button {
+	margin-top: 20px;
+	margin-left: 20px;
+    width: 105px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 15px;
+	font-weight: bold;
+	color: rgb(100,100,100);
+    border: none;
+    overflow: hidden;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+	border-radius: 2px;
+    background-color: rgb(255,255,255);
+    box-shadow: 0px 0px 1px rgb(160,160,160);
+}
+
+#search-bar button:hover{
+    background-color: rgb(240,240,240);
+    box-shadow: 0px 0px 3px rgb(160,160,160);
+}
+
+#nav-panel{
+    margin-top: 5%;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-top: 10px;
+    /* background-color: #FFFFFF; */
+    border: 3px solid rgb(210,210,210);
+}
+
+.nav-panel-line{
+    clear: both;
+    width: 97%;
+    height: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: auto;
+    background-color: #F0F0F0;
+    /*background-color: #B03060;*/
+}
+
+/*@red            : #B03060;*/
+/*@orange         : #FE9A76;*/
+/*@yellow         : #FFD700;*/
+/*@olive          : #32CD32;*/
+/*@green          : #016936;*/
+/*@teal           : #008080;*/
+/*@blue           : #0E6EB8;*/
+/*@violet         : #EE82EE;*/
+/*@purple         : #B413EC;*/
+/*@pink           : #FF1493;*/
+/*@brown          : #A52A2A;*/
+/*@grey           : #A0A0A0;*/
+/*@black          : #000000;*/
+
+.nav-panel-item {
+    float: left;
+    display: block;
+    height: 30px;
+    width: 160px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-panel-item:hover
+{
+    background-color: #B413EC;
+}
+
+.nav-panel-item-img{
+    float: left;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+.nav-panel-item-txt {
+    width: 100px;
+}
+
+.blank_line {
+    height: 20px;
+}

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YShun's Navigation</title>
+    <link rel="stylesheet" type="text/css" href="./css/semantic.min.css">
+    <link rel="stylesheet" href="css/index.css">
+	<link rel="shortcut icon" href="images/favicon.png"/>
+    <script>
+        //LISTEN ENTER KEYDOWN EVENT
+        document.onkeydown = function(e){
+            if(!e){
+                e = window.event;
+            }
+            if((e.keyCode || e.which) == 13){
+                do_search();
+            }
+        }
+
+        //DO SEARCH EVENT
+        function do_baidu_search() {
+            var search_txt = document.getElementById("search-bar-input").value;
+            if (search_txt == "") {
+                alert("search text is empty ! ");
+                return false;
+            }
+            var search_url = "https://www.baidu.com/s?wd=" + search_txt;
+            window.open(search_url);
+        }
+        function do_google_search() {
+            var search_txt = document.getElementById("search-bar-input").value;
+            if (search_txt == "") {
+                alert("search text is empty ! ");
+                return false;
+            }
+            var search_url = "https://www.google.com/search?newwindow=1&hl=zh-CN&q=" + search_txt;
+            window.open(search_url);
+        }
+		function on_enter_key(){
+			if (event.keyCode==13){
+				var search_txt = document.getElementById("search-bar-input").value;
+				if (search_txt == "") {
+					alert("search text is empty ! ");
+					return false;
+				}
+				var search_url = "https://www.baidu.com/s?wd=" + search_txt;
+				window.open(search_url);
+			}
+		}
+    </script>
+</head>
+
+<body>
+
+<!---------------------------------------------------------------------------------------------------->
+
+<div class="left-png" style="margin-left: 5px; margin-top: 5%; float: left">
+    <img src="./images/left.png" alt="" width="200">
+</div>
+
+<div class="right-png" style="margin-top: 5%; margin-right: 10px; float: right;">
+    <img src="./images/001.png" alt="" width="250">
+</div>
+
+<!--<div class="left-png" style="width: 10%; margin-top: 5%;">-->
+<!--    <img src="./images/002.png" alt="" width="200">-->
+<!--</div>-->
+
+<!---------------------------------------------------------------------------------------------------->
+<div id="nav-panel">
+
+    <!----------------------------------------------9------------------------------------------------------>
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/Google.png" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="Google" href="https://www.google.com/" target="_blank">
+            <div class="nav-panel-item-txt">Google</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.youtube.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/youtube.png" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="youtube" href="https://www.youtube.com/" target="_blank">
+            <div class="nav-panel-item-txt">youtube</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://drive.google.com/drive/my-drive" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/google_driver.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="google drive" href="https://drive.google.com/drive/my-drive" target="_blank">
+            <div class="nav-panel-item-txt">google drive</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://colab.research.google.com/notebooks/welcome.ipynb#forceEdit=true&sandboxMode=true&scrollTo=FlQq0SUepQbd" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/colab.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="colab" href="https://colab.research.google.com/notebooks/welcome.ipynb#forceEdit=true&sandboxMode=true&scrollTo=FlQq0SUepQbd" target="_blank">
+            <div class="nav-panel-item-txt">colab</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.youneed.win/free-ssr" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/youneed.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="免费SSR" href="https://www.youneed.win/free-ssr" target="_blank">
+            <div class="nav-panel-item-txt"> 免费SSR</div>
+        </a>
+    </div>
+
+    <!----------------------------------------------9------------------------------------------------------>
+
+    <div class="nav-panel-item">
+        <a href="https://github.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/github.png" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="github" href="https://github.com/" target="_blank">
+            <div class="nav-panel-item-txt">github</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.tensorflow.org/?hl=zh-cn" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/tensorflow.png" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="tensorflow" href="https://www.tensorflow.org/?hl=zh-cn" target="_blank">
+            <div class="nav-panel-item-txt">TensorFlow</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://pytorch.org/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/pytorch.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="PyTorch" href="https://pytorch.org/" target="_blank">
+            <div class="nav-panel-item-txt">PyTorch</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.paddlepaddle.org.cn/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/PaddlePaddle.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="PaddlePaddle" href="https://www.paddlepaddle.org.cn/" target="_blank">
+            <div class="nav-panel-item-txt"> PaddlePaddle</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://keras.io" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/keras.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="keras" href="https://keras.io" target="_blank">
+            <div class="nav-panel-item-txt">keras</div>
+        </a>
+    </div>
+
+    <!----------------------------------------------9------------------------------------------------------>
+
+    <div class="nav-panel-item">
+        <a href="https://aistudio.baidu.com/aistudio/index" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/aistudio.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="AI Studio" href="https://aistudio.baidu.com/aistudio/index" target="_blank">
+            <div class="nav-panel-item-txt">AI Studio</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://ai.baidu.com/forum/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/baiduai.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="百度AI开发者社区" href="https://ai.baidu.com/forum/" target="_blank">
+            <div class="nav-panel-item-txt">百度AI开发者社区</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.geeksforgeeks.org/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/geeksforgeeks.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="A computer science portal for geeks" href="https://www.geeksforgeeks.org/" target="_blank">
+            <div class="nav-panel-item-txt"> GeeksforGeeks</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://leetcode.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/leetcode.png" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="Leetcode" href="https://leetcode.com/" target="_blank">
+            <div class="nav-panel-item-txt">Leetcode</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.nowcoder.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/nowcoder.png" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="互联网求职神器和备考学习平台" href="https://www.nowcoder.com/" target="_blank">
+            <div class="nav-panel-item-txt">牛客网</div>
+        </a>
+    </div>
+
+    <!----------------------------------------------9------------------------------------------------------>
+
+    <div class="nav-panel-item">
+        <a href="https://arxiv.org/list/cs.CV/recent" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/arxiv.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="arxiv CV" href="https://arxiv.org/list/cs.CV/recent" target="_blank">
+            <div class="nav-panel-item-txt">arxiv CV</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://paperswithcode.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/paperswithcode.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title=" the latest in machine learning" href="https://paperswithcode.com/" target="_blank">
+            <div class="nav-panel-item-txt">Papers With Code</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://tianchi.aliyun.com/home/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/tianchi.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="天池大数据众智平台" href="https://tianchi.aliyun.com/home/" target="_blank">
+            <div class="nav-panel-item-txt">天池</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.datafountain.cn" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/datafountain.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="DF,CCF指定专业大数据竞赛平台" href="https://www.datafountain.cn" target="_blank">
+            <div class="nav-panel-item-txt">DataFountain</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.kesci.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/kesci.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="科赛" href="https://www.kesci.com/" target="_blank">
+            <div class="nav-panel-item-txt">科赛</div>
+        </a>
+    </div>
+
+    <!----------------------------------------------9------------------------------------------------------>
+
+    <div class="nav-panel-item">
+        <a href="https://dianshi.baidu.com/index" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/dianshi.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="百度点石" href="https://dianshi.baidu.com/index" target="_blank">
+            <div class="nav-panel-item-txt">百度点石</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.paperweekly.site/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/paperweekly.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="paperweekly" href="https://www.paperweekly.site/" target="_blank">
+            <div class="nav-panel-item-txt">paperweekly</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.flyai.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/flyai.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="AI竞赛服务平台" href="https://www.flyai.com/" target="_blank">
+            <div class="nav-panel-item-txt">FlyAI</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/latex_math.ico" height="16" width="16">
+        </a>
+        <a class="ui orange circular label" title="在线 LaTeX 公式编辑器" href="https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn" target="_blank">
+            <div class="nav-panel-item-txt">LaTeX 公式编辑器</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-line" style="background-color: #FE9A76; height: 3px;"></div>
+
+    <!----------------------------------------------9------------------------------------------------------>
+
+    <div class="nav-panel-item">
+        <a href="https://medium.com/topic/machine-learning" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/medium.ico" height="16" width="16">
+        </a>
+        <a class="ui green circular label" title="medium machine learning" href="https://medium.com/topic/machine-learning" target="_blank">
+            <div class="nav-panel-item-txt">medium ml</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.pyimagesearch.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/pyimagesearch.ico" height="16" width="16">
+        </a>
+        <a class="ui green circular label" title="pyimagesearch" href="https://www.pyimagesearch.com/" target="_blank">
+            <div class="nav-panel-item-txt">pyimagesearch</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://ai.yanxishe.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/yanxishe.ico" height="16" width="16">
+        </a>
+        <a class="ui green circular label" title="研习AI产学研新知，助力AI学术开发者成长" href="https://ai.yanxishe.com/" target="_blank">
+            <div class="nav-panel-item-txt">AI研习社</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="http://www.zhuanzhi.ai/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/zhuanzhi.ico" height="16" width="16">
+        </a>
+        <a class="ui green circular label" title="为人工智能从业者服务" href="http://www.zhuanzhi.ai/" target="_blank">
+            <div class="nav-panel-item-txt"> 专知</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="http://bbs.cvmart.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/cvmart.ico" height="16" width="16">
+        </a>
+        <a class="ui green circular label" title="Leetcode" href="http://bbs.cvmart.net/" target="_blank">
+            <div class="nav-panel-item-txt"> 极市视觉算法社区 </div>
+        </a>
+    </div>
+
+    <!----------------------------------------------9------------------------------------------------------>
+
+    <div class="nav-panel-item">
+        <a href="https://courses.learnopencv.com/p/opencv-for-beginners" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/school_of_ai.png" height="16" width="16">
+        </a>
+        <a class="ui green circular label" title="OpenCV for Beginners" href="https://courses.learnopencv.com/p/opencv-for-beginners" target="_blank">
+            <div class="nav-panel-item-txt">School of AI</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://towardsdatascience.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/towardsdatascience.jpeg" height="16" width="16">
+        </a>
+        <a class="ui green circular label" title="Sharing concepts, ideas, and codes" href="https://towardsdatascience.com/" target="_blank">
+            <div class="nav-panel-item-txt">Data Science</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://hackernoon.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/hackernoon.png" height="16" width="16">
+        </a>
+        <a class="ui green circular label" title="hackernoon" href="https://hackernoon.com/" target="_blank">
+            <div class="nav-panel-item-txt">hackernoon</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.analyticsvidhya.com/blog/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/analyticsvidhya.webp" height="16" width="16">
+        </a>
+        <a class="ui green circular label" title="Analytics Discussions | Big Data Discussion" href="https://www.analyticsvidhya.com/blog/" target="_blank">
+            <div class="nav-panel-item-txt"> analytics vidhya</div>
+        </a>
+    </div>
+
+
+    <div class="nav-panel-line" style="background-color: #016936; height: 3px;"></div>
+
+    <!----------------------------------------------9------------------------------------------------------>
+
+    <div class="nav-panel-item">
+        <a href="http://selfdrivingcars.mit.edu/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/selfdrivingcars.gif" height="16" width="16">
+        </a>
+        <a class="ui teal circular label" title="Deep Learning for Self-Driving Cars" href="http://selfdrivingcars.mit.edu/" target="_blank">
+            <div class="nav-panel-item-txt">MIT 6.S094</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="http://rail.eecs.berkeley.edu/deeprlcourse/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/default.png" height="16" width="16">
+        </a>
+        <a class="ui teal circular label" title="Deep Reinforcement Learning" href="http://rail.eecs.berkeley.edu/deeprlcourse/" target="_blank">
+            <div class="nav-panel-item-txt">CS285</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.fast.ai/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/fastai.ico" height="16" width="16">
+        </a>
+        <a class="ui teal circular label" title="Making neural nets uncool again" href="https://www.fast.ai/" target="_blank">
+            <div class="nav-panel-item-txt">fast.ai</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="http://cs231n.stanford.edu/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/default.png" height="16" width="16">
+        </a>
+        <a class="ui teal circular label" title="Convolutional Neural Networks for Visual Recognition" href="http://cs231n.stanford.edu/" target="_blank">
+            <div class="nav-panel-item-txt">CS231n</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="http://web.stanford.edu/class/cs20si/index.html" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/cs20.png" height="16" width="16">
+        </a>
+        <a class="ui teal circular label" title="Tensorflow for Deep Learning Research" href="http://web.stanford.edu/class/cs20si/index.html" target="_blank">
+            <div class="nav-panel-item-txt"> CS 20</div>
+        </a>
+    </div>
+
+    <!----------------------------------------------9------------------------------------------------------>
+
+    <div class="nav-panel-item">
+        <a href="http://cs224d.stanford.edu/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/selfdrivingcars.gif" height="16" width="16">
+        </a>
+        <a class="ui teal circular label" title="Deep Learning for Natural Language Processing" href="http://cs224d.stanford.edu/" target="_blank">
+            <div class="nav-panel-item-txt">CS224d</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://deeplearning.mit.edu/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/mitdeeplearning.gif" height="16" width="16">
+        </a>
+        <a class="ui teal circular label" title="deeplearning mit" href="https://deeplearning.mit.edu/" target="_blank">
+            <div class="nav-panel-item-txt">deeplearning mit</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-line" style="background-color: #008080; height: 3px;"></div>
+
+    <!----------------------------------------------9------------------------------------------------------>
+
+    <div class="nav-panel-item">
+        <a href="http://karpathy.github.io/neuralnets/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/default.png" height="16" width="16">
+        </a>
+        <a class="ui blue circular label" title="Hacker's guide to Neural Networks" href="http://karpathy.github.io/neuralnets/" target="_blank">
+            <div class="nav-panel-item-txt">Karpathy blog</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="http://www.kareemalkaseer.com/tech" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/kareem%20alkaseer.png" height="16" width="16">
+        </a>
+        <a class="ui blue circular label" title="kareem alkaseer" href="http://www.kareemalkaseer.com/tech" target="_blank">
+            <div class="nav-panel-item-txt">kareem alkaseer</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://ujjwalkarn.me/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/ujjwalkarn.png" height="16" width="16">
+        </a>
+        <a class="ui blue circular label" title="machine learning, deep learning, nlp, data science" href="https://ujjwalkarn.me/" target="_blank">
+            <div class="nav-panel-item-txt">data science blog</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://machinelearningmastery.com/blog/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/mlblog.png" height="16" width="16">
+        </a>
+        <a class="ui blue circular label" title="Machine Learning Mastery" href="https://machinelearningmastery.com/blog/" target="_blank">
+            <div class="nav-panel-item-txt">ml blog</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://cv-tricks.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/cvtrick.webp" height="16" width="16">
+        </a>
+        <a class="ui blue circular label" title="Learn Machine Learning, AI & Computer vision" href="https://cv-tricks.com/" target="_blank">
+            <div class="nav-panel-item-txt">cv-tricks</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-line" style="background-color: #0E6EB8; height: 3px;"></div>
+
+    <!----------------------------------------------1------------------------------------------------------>
+<!--    <div class="nav-panel-line" style="background-color: #B03060; height: 3px;"></div>-->
+
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/duitang.png">
+        </a>
+        <a class="ui red circular label" title="堆糖" href="https://www.duitang.com/" target="_blank">
+            <div class="nav-panel-item-txt">堆糖</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/58pic.png">
+        </a>
+        <a class="ui red circular label" title="千图网" href="https://www.58pic.com/" target="_blank">
+            <div class="nav-panel-item-txt">千图网</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/behance.png">
+        </a>
+        <a class="ui red circular label" title="behance" href="https://www.behance.net/" target="_blank">
+            <div class="nav-panel-item-txt">Behance</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/huaban.png">
+        </a>
+        <a class="ui red circular label" title="花瓣网" href="https://huaban.com/" target="_blank">
+            <div class="nav-panel-item-txt">花瓣网</div>
+        </a>
+    </div>
+
+    <!----------------------------------------------2------------------------------------------------------>
+<!--    <div class="nav-panel-line" style="background-color: #B03060"></div>-->
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/zcool.png">
+        </a>
+        <a class="ui red circular label" title="站酷" href="https://www.zcool.com.cn/" target="_blank">
+            <div class="nav-panel-item-txt">站酷</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/dribbble.png">
+        </a>
+        <a class="ui red circular label" title="Dribbble" href="https://dribbble.com/" target="_blank">
+            <div class="nav-panel-item-txt">Dribbble</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/iconfont.png">
+        </a>
+        <a class="ui red circular label" title="阿里巴巴矢量图标库" href="https://www.iconfont.cn/" target="_blank">
+            <div class="nav-panel-item-txt">IconFont</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/unsplash.png">
+        </a>
+        <a class="ui red circular label" title="Unsplash" href="https://unsplash.com" target="_blank">
+            <div class="nav-panel-item-txt">Unsplash</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/pexel.png">
+        </a>
+        <a class="ui red circular label" title="Pexels" href="https://www.pexels.com/" target="_blank">
+            <div class="nav-panel-item-txt">Pexels</div>
+        </a>
+    </div>
+
+    <!----------------------------------------------3------------------------------------------------------>
+<!--    <div class="nav-panel-line" style="background-color: #B03060"></div>-->
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/pixabay.png">
+        </a>
+        <a class="ui red circular label" title="Pixabay" href="https://pixabay.com/" target="_blank">
+            <div class="nav-panel-item-txt">Pixabay</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/visualhunt.png">
+        </a>
+        <a class="ui red circular label" title="visualhunt" href="https://visualhunt.com/" target="_blank">
+            <div class="nav-panel-item-txt">visualhunt</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/quotefancy.png">
+        </a>
+        <a class="ui red circular label" title="Wallpapers With Inspirational Quotes" href="https://quotefancy.com/" target="_blank">
+            <div class="nav-panel-item-txt">quotefancy</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/nipponcolors.png">
+        </a>
+        <a class="ui red circular label" title="日本の伝統色" href="http://nipponcolors.com/" target="_blank">
+            <div class="nav-panel-item-txt">nipponcolors</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.easyicon.net/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/easyicon.ico">
+        </a>
+        <a class="ui red circular label" title="easyicon" href="https://www.easyicon.net/" target="_blank">
+            <div class="nav-panel-item-txt">easyicon</div>
+        </a>
+    </div>
+	
+	<!-----------------------------------------------4----------------------------------------------------->
+<!--    <div class="nav-panel-line" style="background-color: #B03060"></div>-->
+
+    <div class="nav-panel-item">
+        <a href="http://findicons.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/findicons.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="findicons" href="http://findicons.com/" target="_blank">
+            <div class="nav-panel-item-txt">findicons</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://material.io/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/material.ico" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="Design  Develop  Resources" href="https://material.io/" target="_blank">
+            <div class="nav-panel-item-txt">material design</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://semantic-ui.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/semantic-ui.png">
+        </a>
+        <a class="ui red circular label" title="User Interface is the language of the web" href="https://semantic-ui.com/" target="_blank">
+            <div class="nav-panel-item-txt"> Semantic UI </div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://fontawesome.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/fontawesome.png">
+        </a>
+        <a class="ui red circular label" title="Get vector icons and social logos on your website " href="https://fontawesome.com/" target="_blank">
+            <div class="nav-panel-item-txt"> Font Awesome </div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.ssyer.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/ssyer.ico" width="16" height="16">
+        </a>
+        <a class="ui red circular label" title="让作品遇见全世界" href="https://www.ssyer.com/" target="_blank">
+            <div class="nav-panel-item-txt"> 沙沙野 </div>
+        </a>
+    </div>
+	
+    <!----------------------------------------------5------------------------------------------------------>
+<!--    <div class="nav-panel-line" style="background-color: #B03060"></div>-->
+
+    <div class="nav-panel-item">
+        <a href="http://www.cndesign.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/cndesign.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="CND设计网" href="http://www.cndesign.com/" target="_blank">
+            <div class="nav-panel-item-txt">CND设计网</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="http://miniature-calendar.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/miniature-calendar.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="miniature-calendar" href="http://miniature-calendar.com/" target="_blank">
+            <div class="nav-panel-item-txt">miniature</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://aimeike.tv/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/aimeike.ico" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="视频制作" href="https://aimeike.tv/" target="_blank">
+            <div class="nav-panel-item-txt">爱美刻</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.flickr.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/flickr.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="flickr" href="https://www.flickr.com/" target="_blank">
+            <div class="nav-panel-item-txt"> flickr</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.mathcha.io/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/mathcha.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="Online Mathematics Editor" href="https://www.mathcha.io/" target="_blank">
+            <div class="nav-panel-item-txt"> mathcha </div>
+        </a>
+    </div>
+
+    <!--------------------------------------------6-------------------------------------------------------->
+<!--    <div class="nav-panel-line" style="background-color: #B03060"></div>-->
+
+    <div class="nav-panel-item">
+        <a href="https://tinypng.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/tinypng.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="Smart PNG and JPEG compression" href="https://tinypng.com/" target="_blank">
+            <div class="nav-panel-item-txt">TinyPNG</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://patterninja.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/patterninja.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="pattern making application" href="https://patterninja.com/" target="_blank">
+            <div class="nav-panel-item-txt">Patterninja </div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://zh.clippingmagic.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/clippingmagic.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="立即删除在线图像背景" href="https://zh.clippingmagic.com/" target="_blank">
+            <div class="nav-panel-item-txt">Clipping Magic</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.fotor.com/cn/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/fotor.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="免费的在线图片编辑与创作工具" href="https://www.fotor.com/cn/" target="_blank">
+            <div class="nav-panel-item-txt"> Fotor</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.uisdc.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/uisdc.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="设计师交流学习平台" href="https://www.uisdc.com/" target="_blank">
+            <div class="nav-panel-item-txt"> 优设网 </div>
+        </a>
+    </div>
+
+    <!---------------------------------------------7------------------------------------------------------->
+<!--    <div class="nav-panel-line" style="background-color: #B03060"></div>-->
+	
+    <div class="nav-panel-item">
+        <a href="http://www.eqxiu.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/eqxiu.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="h5页面制作工具，微信场景制作" href="http://www.eqxiu.com/" target="_blank">
+            <div class="nav-panel-item-txt">易企秀</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.rabbitpre.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/rabbitpre.ico" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="微信H5页面_微场景制作工具" href="https://www.rabbitpre.com/" target="_blank">
+            <div class="nav-panel-item-txt">兔展</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="http://maka.im/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/maka.ico" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="免费H5页面制作,海报制作,微信营销,微场景和模板素材设计分享平台" href="http://maka.im/" target="_blank">
+            <div class="nav-panel-item-txt">MAKA</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.chuangkit.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/chuangkit.ico" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="平面设计作图神器_免费设计模板_在线稿定设计印刷" href="https://www.chuangkit.com/" target="_blank">
+            <div class="nav-panel-item-txt"> 创客贴</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.sccpre.cat/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/sccpre.ico" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="Discover & Download Best png Image For Free" href="https://www.sccpre.cat/" target="_blank">
+            <div class="nav-panel-item-txt"> sccpre </div>
+        </a>
+    </div>
+	
+    <!----------------------------------------------8------------------------------------------------------>
+<!--    <div class="nav-panel-line" style="background-color: #B03060"></div>-->
+    <div class="nav-panel-item">
+        <a href="https://thenounproject.com/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/nounproject.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="Icons for Everything" href="https://thenounproject.com/" target="_blank">
+            <div class="nav-panel-item-txt">Noun Project </div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://yuml.me/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/yuml.png" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="Create and share simple UML diagrams in your blogs, wikis, forums, bug-trackers and emails" href="https://yuml.me/" target="_blank">
+            <div class="nav-panel-item-txt">yuml</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-item">
+        <a href="https://www.canva.cn/" class="ui circular left spaced image" target="_blank">
+            <img src="./images/web_icons/canva.ico" height="16" width="16">
+        </a>
+        <a class="ui red circular label" title="在线平面设计软件工具_免费设计素材和模板_海量免费字体和正版图片" href="https://www.canva.cn/" target="_blank">
+            <div class="nav-panel-item-txt">canva</div>
+        </a>
+    </div>
+
+    <div class="nav-panel-line" style="background-color: #B03060; height: 3px;"></div>
+
+
+</div>
+
+</body>
+</html>
